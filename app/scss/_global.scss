@@ -11,3 +11,50 @@ body{
 .main{
   flex-grow: 1;
 }
+
+.filter-btn{
+  border: none;
+    @extend %dmsans-700;
+    font-size: 16px;
+    color: #8b8b8b;
+    background-color: #fff;
+    &:hover{
+      color: #191919;
+      transition: all .3s;
+    }
+    &--active{
+      border: none;
+      @extend %dmsans-700;
+      color: #191919;
+    }
+}
+
+.breadcrumbs{
+  display: inline-flex;
+  align-items: center;
+  &__list{
+    display: flex;
+  }
+  &__item{
+    padding-right: 23px;
+    position: relative;
+    &::after{
+      content: '/';
+      position: absolute;
+      right: 11px;
+      top: 1px;
+      color: #92969b;
+    }
+    &:last-child{
+      padding-right: 0;
+      &::after{
+        display: none;
+      }
+    }
+  }
+  &__link{
+    font-size: 14px;
+    color: #92969b;
+    @extend %rubik-400;
+  }
+}

@@ -1,10 +1,10 @@
 @font-face{
-  font-family: 'Rubik-Medium', sans-serif ;
-  font-weight: 500;
+  font-family: 'Rubik-Light', sans-serif ;
+  font-weight: 300;
   font-style: normal;
-  src:local(Rubik-Medium),
-      url('../fonts/Rubik-Medium.woff2') format('woff2'),
-      url('../fonts/Rubik-Medium.woff') format('woff');
+  src:local(Rubik-Light),
+      url('../fonts/Rubik-Light.woff2') format('woff2'),
+      url('../fonts/Rubik-Light.woff') format('woff');
   font-display: swap;    
 }
 
@@ -15,6 +15,26 @@
   src:local(Rubik-Regular),
       url('../fonts/Rubik-Regular.woff2') format('woff2'),
       url('../fonts/Rubik-Regular.woff') format('woff');
+  font-display: swap;    
+}
+
+@font-face{
+  font-family: 'Rubik-Medium', sans-serif ;
+  font-weight: 500;
+  font-style: normal;
+  src:local(Rubik-Medium),
+      url('../fonts/Rubik-Medium.woff2') format('woff2'),
+      url('../fonts/Rubik-Medium.woff') format('woff');
+  font-display: swap;    
+}
+
+@font-face{
+  font-family: 'Rubik-Bold', sans-serif ;
+  font-weight: 700;
+  font-style: normal;
+  src:local(Rubik-Bold),
+      url('../fonts/Rubik-Bold.woff2') format('woff2'),
+      url('../fonts/Rubik-Bold.woff') format('woff');
   font-display: swap;    
 }
 
@@ -45,5 +65,15 @@
   src:local(DMSans-Bold),
       url('../fonts/DMSans-Bold.woff2') format('woff2'),
       url('../fonts/DMSans-Bold.woff') format('woff');
+  font-display: swap;    
+}
+
+@font-face{
+  font-family: 'Poppins-Bold', sans-serif ;
+  font-weight: 700;
+  font-style: normal;
+  src:local(DMSans-Bold),
+      url('../fonts/Poppins-Bold.woff2') format('woff2'),
+      url('../fonts/Poppins-Bold.woff') format('woff');
   font-display: swap;    
 }

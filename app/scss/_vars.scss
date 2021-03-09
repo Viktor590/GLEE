@@ -1,5 +1,9 @@
 $text-link: #7b7b7b;
 
+%rubik-300{
+  font-family: 'Rubik-Light', sans-serif ;
+  font-weight: 300;
+}
 
 %rubik-400{
   font-family: 'Rubik-Regular', sans-serif ;
@@ -9,6 +13,11 @@ $text-link: #7b7b7b;
 %rubik-500{
   font-family: 'Rubik-Medium', sans-serif ;
   font-weight: 500;
+}
+
+%rubik-700{
+  font-family: 'Rubik-Bold', sans-serif ;
+  font-weight: 700;
 }
 
 %dmsans-400{
@@ -26,4 +35,15 @@ $text-link: #7b7b7b;
   font-weight: 700;
 }
 
+%poppins-700{
+  font-family: 'Poppins-Bold', sans-serif ;
+  font-weight: 700;
+}
+
+@function max($numbers...) {
+@return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+@return m#{i}n(#{$numbers});
+}
 
