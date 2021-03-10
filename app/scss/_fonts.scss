@@ -69,10 +69,20 @@
 }
 
 @font-face{
+  font-family: 'Poppins-SemiBold', sans-serif ;
+  font-weight: 600;
+  font-style: normal;
+  src:local(Poppins-SemiBold),
+      url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+      url('../fonts/Poppins-SemiBold.woff') format('woff');
+  font-display: swap;    
+}
+
+@font-face{
   font-family: 'Poppins-Bold', sans-serif ;
   font-weight: 700;
   font-style: normal;
-  src:local(DMSans-Bold),
+  src:local(Poppins-Bold),
       url('../fonts/Poppins-Bold.woff2') format('woff2'),
       url('../fonts/Poppins-Bold.woff') format('woff');
   font-display: swap;    

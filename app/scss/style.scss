@@ -828,4 +828,105 @@
   }
 }
 
+.team{
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 110px;
+  }
+  &__content{
+    max-width: 300px;
+    margin-right: 100px;
+  }
+  &__title{
+    font-size: 36px;
+    @extend %dmsans-700;
+    color: #243f4d;
+    margin-bottom: 25px;
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 30px;
+    @extend %rubik-400;
+    color: #243f4d;
+    margin-bottom: 50px;
+  }
+  &__btn{
+    width: 200px;
+    padding: 19px 60px 19px 25px;
+    background-color: #a3bbc8;
+    font-size: 15px;
+    @extend %poppins-600;
+    color: #fff;
+    position: relative;
+    &::after{
+      content: '';
+      background-image: url('../images/icon/arrows-top-slider-btn.svg');
+      position: absolute;
+      width: 22px;
+      height: 9px;
+      top: 23px;
+      right: 18px;
+    }
+  }
+  &__item{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px 25px;
+  }
+  &__manager-img{
+    object-fit: cover;
+    width: 360px;
+    height: 320px;
+  }
+  &__manager-contact{
+    max-width: 325px;
+    height: 110px;
+    background-color: #fff;
+    transform: translateY(-50px);
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    position: relative;
+  }
+  &__manager-title{
+    font-size: 22px;
+    @extend %dmsans-700;
+    color: #436372;
+    padding: 30px 0 15px 23px;
+  }
+  &__manager-descr{
+    font-size: 16px;
+    @extend %rubik-400;
+    color: #565872;
+    padding-left: 23px;
+  }
+  &__manager-insta{
+    position: absolute;
+    right: 100px;
+    top: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: #f6f6f6;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  &__manager-insta__icon{
+     margin: 10px auto;
+  }
+  &__manager-gplus{
+    position: absolute;
+    right: 50px;
+    top: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: #f6f6f6;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  &__manager-gplus__icon{
+    margin: 13px auto;
+  }
+}
+
+
+
 @import 'media';
