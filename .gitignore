@@ -2,6 +2,7 @@
 .idea/
 .idea/*
 .vscode
+.jshintrc
 *.sublime*
 npm_debug.*
 
