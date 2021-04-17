@@ -1,5 +1,9 @@
 $(function () {
 
+   $('.user__nav-btn').on('click', function () {
+   $('.menu__list').toggleClass('menu__list--active');
+ });
+
   $('.product-page__related-cart').slick({
   infinite: true,
   speed: 400,
@@ -9,6 +13,26 @@ $(function () {
   nextArrow: false,
   autoplay: true,
   autoplaySpeed: 3000,
+  responsive: [
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 400,
+      settings: {
+        slidesToShow: 1
+      }
+    },
+  ]
 });
 
   $('.product-page__tabs-item').on('click', function(e){
